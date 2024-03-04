@@ -24,7 +24,8 @@ public class DeviceCheck {
                 check(CHECK.PHONE_MODEL, "SM-G965F") || check(CHECK.PHONE_MODEL, "SM-N960N") ||
                 check(CHECK.PHONE_MODEL, "SM-G960N") || check(CHECK.PHONE_MODEL, "SM-G965N") ||
                 check(CHECK.PHONE_MODEL, "SM-A217M") || check(CHECK.PHONE_MODEL, "SM-A217F") ||
-                check(CHECK.FILE_EXISTS, "/sys/devices/platform/17500000.mali/clock") || check(CHECK.FILE_EXISTS, "/data/.kernelmanager/bypass"));
+                check(CHECK.FILE_EXISTS, "/sys/devices/platform/17500000.mali/clock") || check(CHECK.FILE_EXISTS, "/sys/devices/platform/11500000.mali/clock") ||
+                check(CHECK.FILE_EXISTS, "/data/.kernelmanager/bypass"));
     }
 
     private static boolean check(CHECK mode, String value){

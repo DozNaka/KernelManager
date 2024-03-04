@@ -721,7 +721,7 @@ public class GPUFragment extends RecyclerViewFragment {
 
         Boolean enableSeekbar = AppSettings.getBoolean("gpu_individual_volts", false, getActivity());
 
-        seekbar.setTitle(freq + " " + getString(R.string.mhz));
+        seekbar.setTitle(freq / 1000 + " " + getString(R.string.mhz));
         seekbar.setSummary(getString(R.string.def) + ": " + voltageStock + " " + getString(R.string.mv));
         seekbar.setUnit(getString(R.string.mv));
         seekbar.setItems(progress);
